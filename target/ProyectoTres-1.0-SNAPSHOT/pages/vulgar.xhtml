@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+    <h:head>
+        <title>Facelet Title</title>
+    </h:head>
+    <h:body>
+
+        <h:form id="formRevision">
+            <p:growl severity="info,warn" id="growl" life="3000" showDetail="false"/>
+            <p:messages id="messages" showDetail="false" closable="true"></p:messages>
+            <label class="form-control-label">Doctor</label>
+            <h:selectOneMenu id="selectDoctor" value="#{controllerRevision.selectedDoctor}" converter="usuarioConverter" 
+                             class="form-control" style="height: 45px;">
+                <f:selectItem itemLabel="" itemValue= "#{null}"/>
+                <f:selectItems value="#{controllerUsuario.doctores}" var="listaDoctores" itemLabel="#{listaDoctores.nombre}" itemValue="#{listaDoctores}" />
+            </h:selectOneMenu>
+
+            <label class="form-control-label">Admission</label>
+            <h:selectOneMenu id="selectAdmission" value="#{controllerRevision.selectedIngreso}" converter="ingresoConverter"
+                             class="form-control" style="height: 45px;" required="true" requiredMessage="Por favor rellene los espacios requeridos">
+                <f:selectItem itemLabel="" itemValue= "#{null}"/>
+                <f:selectItems value="#{controllerIngreso.ingresos}" var="listaIngresos" itemLabel="#{listaIngresos.nombrePaciente}" itemValue="#{listaIngresos}" />
+            </h:selectOneMenu>
+
+
+            <label class="form-control-label">Revision Date</label>
+            <p:inputText class="form-control form-control-alternative" value="#{controllerRevision.fechaRevision}" placeholder="XX-XX-XXXX" required="true" requiredMessage="Por favor rellene los espacios requeridos"/>
+
+
+            <label class="form-control-label">Report</label>
+            <p:inputText class="form-control" value="#{controllerRevision.informe}" required="true" requiredMessage="Por favor rellene los espacios requeridos"/>
+
+
+            <h:commandButton class="btn btn-success" style="float: right;" value="Create" action="#{controllerRevision.agregar()}"></h:commandButton>
+
+        </h:form>
+
+    </h:body>
+</html>
+

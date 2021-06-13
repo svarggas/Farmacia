@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <title>TODO supply a title</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <link href="/ProyectoTres/assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+        <style>
+            *{
+                transition: all 0.6s;
+            }
+
+            html {
+                height: 100%;
+            }
+
+            body{
+                font-family: 'Lato', sans-serif;
+                color: #888;
+                margin: 0;
+            }
+
+            #main{
+                display: table;
+                width: 100%;
+                height: 100vh;
+                text-align: center;
+            }
+
+            .fof{
+                display: table-cell;
+                vertical-align: middle;
+            }
+
+            .fof h1{
+                font-size: 50px;
+                display: inline-block;
+                padding-right: 12px;
+                animation: type .5s alternate infinite;
+            }
+
+            @keyframes type{
+                from{box-shadow: inset -3px 0px 0px #888;}
+                to{box-shadow: inset -3px 0px 0px transparent;}
+            }
+        </style>
+    </head>
+    <body>
+        <div id="main">
+            <div class="fof">
+                <h1>Error 404</h1><br/>
+                <button type="button" onclick="window.history.go(-1); return false;" class="btn btn-danger">Return</button>
+            </div>
+        </div>
+    </body>
+</html>

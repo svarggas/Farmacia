@@ -1,0 +1,252 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://xmlns.jcp.org/jsf/core">
+
+    <h:head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no"/>
+        <title>Sagrado Parrales</title>
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet"/>
+        <link href="/ProyectoTres/assets/js/plugins/nucleo/css/nucleo.css" rel="stylesheet" />
+        <link href="/ProyectoTres/assets/js/plugins/@fortawesome/fontawesome-free/css/all.min.css" rel="stylesheet" />
+        <link href="/ProyectoTres/assets/css/argon-dashboard.css?v=1.1.0" rel="stylesheet" />
+    </h:head>
+
+    <h:body>
+        <nav class="navbar navbar-vertical fixed-left navbar-expand-md navbar-light bg-white" id="sidenav-main">
+            <div class="container-fluid">
+                <!-- Toggler -->
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Brand -->
+                <span class="navbar-brand">
+                    <h1 style="color:#FFC02E;">Farmacia <br/>San Parrales</h1>
+                </span>
+                <!-- User -->
+                <ul class="nav align-items-center d-md-none">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link nav-link-icon" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="ni ni-bell-55"></i>
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-arrow dropdown-menu-right" aria-labelledby="navbar-default_dropdown_1">
+                            <a class="dropdown-item" href="#">Action</a>
+                            <a class="dropdown-item" href="#">Another action</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" href="#">Something else here</a>
+                        </div>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link" href="#" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <div class="media align-items-center">
+                                <span class="avatar avatar-sm rounded-circle">
+                                    <img alt="Image placeholder" src="/ProyectoTres/assets/img/theme/team-1-800x800.jpg"/>
+                                </span>
+                            </div>
+                        </a>
+                    </li>
+                </ul>
+                <!-- Collapse -->
+                <div class="collapse navbar-collapse" id="sidenav-collapse-main">
+                    <!-- Collapse header -->
+                    <div class="navbar-collapse-header d-md-none">
+                        <div class="row">
+                            <div class="col-6 collapse-brand">
+                                <a href="./index.html">
+                                    <img src="/ProyectoTres/assets/img/brand/blue.png"/>
+                                </a>
+                            </div>
+                            <div class="col-6 collapse-close">
+                                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#sidenav-collapse-main" aria-controls="sidenav-main" aria-expanded="false" 
+                                        aria-label="Toggle sidenav">
+                                    <span></span>
+                                    <span></span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Form -->
+                    <form class="mt-4 mb-3 d-md-none">
+                        <div class="input-group input-group-rounded input-group-merge">
+                            <input type="search" class="form-control form-control-rounded form-control-prepended" placeholder="Search" aria-label="Search"/>
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <span class="fa fa-search"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                    <!-- Navigation -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class=" nav-link" href="./userProfile.xhtml"><i class="ni ni-tv-2 text-gray"></i> User Profile
+                            </a>
+                        </li>
+                        <li class="nav-item active">
+                            <a class="nav-link active" href="./admissions.xhtml">
+                                <i class="ni ni-badge text-blue "></i> Admissions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./recipes.xhtml">
+                                <i class="ni ni-paper-diploma text-orange"></i> Recipes
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./revisions.xhtml">
+                                <i class="ni ni-collection text-yellow"></i> Revisions
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./patients.xhtml">
+                                <i class="ni ni-single-02 text-red"></i> Patients
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./users.xhtml">
+                                <i class="ni ni-circle-08 text-info"></i> Users
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./services.xhtml">
+                                <i class="ni ni-ambulance text-default"></i> Services
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./DIRR.xhtml">
+                                <i class="ni ni-atom text-default"></i> D.I.R.R.
+                            </a>
+                        </li>
+                        <li class="nav-item">                      
+                            <div class="dropdown">
+                                <a class="nav-link" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="ni ni-tag text-green"></i> Drugs
+                                </a>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuLink" style="margin-left: 20px;">
+                                    <a class="dropdown-item" href="./drugs.xhtml">Drug</a>
+                                    <a class="dropdown-item" href="./drugsPP.xhtml">Price and Presentation</a>
+                                    <a class="dropdown-item" href="./drugAddPresentation.xhtml">Add Presentation</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                    <!-- Divider -->
+                    <hr class="my-3"/>
+                    <ul class="navbar-nav mb-md-3">
+                        <li class="nav-item">
+                            <h:form>
+                                <p:commandLink action="#{controllerUsuario.logout}" class="nav-link" ajax="false">
+                                    <i class="ni ni-curved-next"></i> Log Out
+                                </p:commandLink>
+                            </h:form>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div class="main-content">
+            <!-- Navbar -->
+            <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+                <div class="container-fluid">
+                    <div class="form-group mb-0"></div>
+                    <!-- User -->
+                    <ul class="navbar-nav align-items-center d-none d-md-flex">
+                        <li class="nav-item dropdown">
+                            <div class="media align-items-center text-white">
+                                <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">#{controllerUsuario.usuarioConect.correo}</span>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+            <!-- End Navbar -->
+
+            <div style="background: rgba(0, 0, 0, 0.3) !important;">
+                <div class="header pb-6 pt-5 pt-md-6" style="background: linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)),url('https://static5.depositphotos.com/1008594/447/v/950/depositphotos_4478648-stock-illustration-medicine-seamless-pattern.jpg');">
+                    <div class="container-fluid">
+                        <div class="header-body">
+                            <span style="color: #F9C02F;font-size: 72px;text-align: right;font-weight: 1000;text-shadow: 2px 0 0 #fff, -2px 0 0 #fff, 0 2px 0 #fff, 0 -2px 0 #fff, 1px 1px #fff, -1px -1px 0 #fff, 1px -1px 0 #fff, -1px 1px 0 #fff;background: transparent;">
+                                Admissions
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="container-fluid mt--7">
+
+                <div class="row">
+                    <div class="col" style="padding-top: 110px;">
+                        <div width="100%">
+                            <h:button value="Add" class="btn btn-info" style="margin:5px 0px;float:right;background: #F9BF2E;border: 1px solid white;"
+                                      outcome="admissionsAdd.xhtml" rendered="#{controllerUsuario.usuarioConect.tipo.equalsIgnoreCase('secretary') or controllerUsuario.usuarioConect.tipo.equalsIgnoreCase('admin') ? true : false}"></h:button>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col">
+                        <div width="100%">
+                            <h:form>
+                                <p:dataTable var="admission" value="#{controllerIngreso.ingresos}" emptyMessage="We couldn't find any information" style="text-align: center;">
+                                    <p:column headerText="Patient">
+                                        <p:outputLabel value="#{admission.nombrePaciente}" />
+                                    </p:column>
+
+                                    <p:column headerText="Service">
+                                        <p:outputLabel value="#{admission.nombreServicio}" />
+                                    </p:column>
+
+                                    <p:column headerText="Admission Date">
+                                        <p:outputLabel value="#{admission.fechaIngreso}" />
+                                    </p:column>
+
+                                    <p:column headerText="Egress Date">
+                                        <p:outputLabel value="#{admission.fechaSalida}" />
+                                    </p:column>
+                                    <p:column headerText="Update" rendered="#{controllerUsuario.usuarioConect.tipo.equalsIgnoreCase('admin') ? true : false}">
+                                        <h:commandButton value="Update" action="#{controllerIngreso.redireccionarModificar(admission.idIngreso)}" class="btn btn-primary my-2"></h:commandButton>
+                                    </p:column>
+                                </p:dataTable>
+                            </h:form>
+                        </div>
+                    </div>
+                </div>
+
+
+                <!-- Footer -->
+                <footer class="footer">
+                    <div class="row align-items-center justify-content-xl-between">
+                        <div class="col-xl-6">
+                            <div class="copyright text-center text-xl-left text-muted">
+                                &copy; 2019<span class="font-weight-bold ml-1">- Sagrado Parrales</span>
+                            </div>
+                        </div>
+                        <div class="col-xl-6">
+                            <ul class="nav nav-footer justify-content-center justify-content-xl-end">
+                                <li class="nav-item">
+                                    <span class="nav-link">Proyecto III</span>
+                                </li>
+                                <li class="nav-item">
+                                    <span class="nav-link">Universidad Latina de Costa Rica</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </footer>
+            </div>
+        </div>
+
+        <script src="/ProyectoTres/assets/js/plugins/jquery/dist/jquery.min.js"></script>
+        <script src="/ProyectoTres/assets/js/plugins/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+        <script src="/ProyectoTres/assets/js/plugins/chart.js/dist/Chart.min.js"></script>
+        <script src="/ProyectoTres/assets/js/plugins/chart.js/dist/Chart.extension.js"></script>
+        <script src="/ProyectoTres/assets/js/argon-dashboard.min.js?v=1.1.0"></script>
+    </h:body>
+
+</html>
